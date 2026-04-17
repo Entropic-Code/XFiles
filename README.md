@@ -1,7 +1,7 @@
 # XFiles
 XFiles is a super simple file sharing application written in c# using .net core 10.0, the application aims to facilitate p2p file transfer between two devices. 
 
-INSTRUCTIONS FOR USE
+**INSTRUCTIONS FOR USE:**
 
 The Program is a console-based peer-to-peer file transfer utility designed for operation within a trusted local network. Interaction with the Program is performed exclusively through text-based commands entered by the user.
 
@@ -9,27 +9,29 @@ Upon launching, the Program presents a command prompt. The user may type “help
 
 The primary operational commands are as follows:
 
-```
-Exit (alias: e): Terminates the Program immediately.
-Send (alias: s): Initiates the transmission of a file to another device on the network. The user will be prompted to provide a recipient identifier (which may be an IP address, encoded device address, or stored nickname) and the full file path of the file to be transmitted.
-Receive (alias: r): Places the Program into a listening state on the configured port (default: 9000) to accept an incoming file transfer. Received files are saved to the system’s default downloads directory.
-Address (alias: a): Displays the user’s device address in encoded form. The user may choose between a local network address (LAN or wireless) or a public-facing address.
-Nickname (alias: n): Allows the user to create, update, or remove aliases (nicknames) associated with device addresses. These nicknames may subsequently be used in place of raw addresses when sending files.
-Options (alias: o): Displays and permits modification of configurable settings, including but not limited to network port, buffer size, and startup behavior.
-```
+- **Exit (alias: e):** Terminates the Program immediately.
+- **Send (alias: s):** Initiates the transmission of a file to another device on the network. The user will be prompted to provide a recipient identifier (which may be an IP address, encoded device address, or stored nickname) and the full file path of the file to be transmitted.
+- **Receive (alias: r):** Places the Program into a listening state on the configured port (default: 9000) to accept an incoming file transfer. Received files are saved to the system’s default downloads directory.
+- **Address (alias: a):** Displays the user’s device address in encoded form. The user may choose between a local network address (LAN or wireless) or a public-facing address.
+- **Nickname (alias: n):** Allows the user to create, update, or remove aliases (nicknames) associated with device addresses. These nicknames may subsequently be used in place of raw addresses when sending files.
+- **Options (alias: o):** Displays and permits modification of configurable settings, including but not limited to network port, buffer size, and startup behavior.
+
 Additional operational behaviors include:
-```
-Configuration Files:
-The Program automatically creates and maintains configuration files within the user’s application data directory. These files store user-defined nicknames and operational settings.
-Address Handling:
-Device addresses may be stored and transmitted in encoded form. The Program will automatically resolve and decode such addresses when used in file transfer operations.
-File Transfers:
-File transfers occur over a designated network port and rely on direct peer-to-peer communication. Successful operation requires that both sending and receiving devices are accessible within the same network environment and that no external firewalls or restrictions block the configured port.
-Error Handling:
-In the event of invalid input, connection failure, or file errors, the Program will display an error message and return control to the user without terminating, unless explicitly instructed.
-Reset and Restart Functions:
-The Program includes commands to restart itself and to reset configuration files to default values. Use of such functions will overwrite existing configuration data.
-```
+
+- **Configuration Files:**  
+  The Program automatically creates and maintains configuration files within the user’s application data directory. These files store user-defined nicknames and operational settings.
+
+- **Address Handling:**  
+  Device addresses may be stored and transmitted in encoded form. The Program will automatically resolve and decode such addresses when used in file transfer operations.
+
+- **File Transfers:**  
+  File transfers occur over a designated network port and rely on direct peer-to-peer communication. Successful operation requires that both sending and receiving devices are accessible within the same network environment and that no external firewalls or restrictions block the configured port.
+
+- **Error Handling:**  
+  In the event of invalid input, connection failure, or file errors, the Program will display an error message and return control to the user without terminating, unless explicitly instructed.
+
+- **Reset and Restart Functions:**  
+  The Program includes commands to restart itself and to reset configuration files to default values. Use of such functions will overwrite existing configuration data.
 
 **DISCLAIMER AND LIMITATION OF LIABILITY**
 
